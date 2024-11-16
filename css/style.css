@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  font-family: EB Garamond;
+  background: rgba(210, 224, 239, 1);
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(210, 224, 239, 1) 0%,
+    rgba(94, 169, 219, 1) 31.75%
+  );
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(210, 224, 239, 1) 0%,
+    rgba(94, 169, 219, 1) 31.75%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(210, 224, 239, 1) 0%,
+    rgba(94, 169, 219, 1) 31.75%
+  );
+  background: linear-gradient(
+    -225deg,
+    rgba(210, 224, 239, 1) 0%,
+    rgba(94, 169, 219, 1) 31.75%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#d2e0ef", endColorstr="#5ea9db",GradientType=1 );
+  height: 100%;
+  line-height: 1;
+}
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+/*--------------------------------------------------------*/
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+/*--------------------------------------------------------*/
+
+.box__container {
+  padding-top: 200px;
+}
+.box--body {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px 100px;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 15px 5px rgba(255, 255, 255, 0.3);
+}
+.box-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-bottom: 80px;
+}
+.box-title::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(94, 169, 219);
+  top: 60%;
+  left: 30%;
+  width: 290px;
+  height: 2px;
+}
+.box-quote {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+  font-size: 25px;
+}
+.box-by-athor {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* додаємо, щоб вирівняти по нижньому краю */
+  font-size: 20px;
+  padding-bottom: 40px;
+  padding-left: 500px;
+}
+/* .box-by-athor::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(94, 169, 219);
+  width: 20px;
+  height: 1px;
+  top: 14%;
+  left: 87%;
+} */
+.box--buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.box--buttons__new-quote {
+  border-radius: 20px;
+  padding: 15px 40px;
+  background-color: rgb(94, 169, 219);
+  color: aliceblue;
+  font-size: 20px;
+}
+.box--buttons__tweet {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 15px 40px;
+  background-color: rgb(94, 169, 219);
+  color: aliceblue;
+}
