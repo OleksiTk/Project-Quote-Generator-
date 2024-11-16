@@ -15,8 +15,38 @@
       <div class="box__container">
         <div class="box--body">
           <h1 class="box-title">Quote of the day</h1>
-          <blockquote class="box-quote">Loading...</blockquote>
-          <span class="box-by-athor">Loading...</span>
+          <blockquote class="box-quote">
+            <div class="animation">
+              <div
+                aria-busy="true"
+                aria-label="Loading"
+                role="progressbar"
+                class="container"
+              >
+                <div class="swing">
+                  <div class="swing-l"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="swing-r"></div>
+                </div>
+                <div class="shadow">
+                  <div class="shadow-l"></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div class="shadow-r"></div>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          <p class="box-by-athor">
+            <span class="box-by-athor__text"></span>
+          </p>
           <div class="box--buttons">
             <button class="box--buttons__new-quote">New Quote</button>
             <button class="box--buttons__tweet">Tweet</button>
