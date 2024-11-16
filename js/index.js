@@ -17,7 +17,7 @@ function Tweet() {
 async function getUrl(url) {
   let response = await fetch(url);
   let data = await response.json();
-  quotetext.innerHTML = data.quote;
+  quotetext.innerHTML = `"${data.quote}"`;
   athor.innerHTML = data.author;
   console.log(data);
 
